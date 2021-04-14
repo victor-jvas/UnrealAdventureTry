@@ -1,0 +1,59 @@
+<changelist name="Uncommitted_changes_before_rebase_[Default_Changelist]1" date="1616723336883" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/Build/Win64/FirstProjectEditor/Development/Makefile.bin" />
+    <option name="AFTER_PATH" value="Intermediate/Build/Win64/FirstProjectEditor/Development/Makefile.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/Makefile.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/Build/Win64/UE4Editor/Development/FirstProject/Main.cpp.obj" />
+    <option name="AFTER_PATH" value="Intermediate/Build/Win64/UE4Editor/Development/FirstProject/Main.cpp.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/Main.cpp.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/Build/Win64/FirstProjectEditor/Development/Metadata-HotReload.dat" />
+    <option name="AFTER_PATH" value="Intermediate/Build/Win64/FirstProjectEditor/Development/Metadata-HotReload.dat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/Metadata-HotReload.dat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/Build/Win64/UE4Editor/Development/FirstProject/UE4Editor-FirstProject-0031.exp" />
+    <option name="AFTER_PATH" value="Intermediate/Build/Win64/UE4Editor/Development/FirstProject/UE4Editor-FirstProject-0031.exp" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/UE4Editor-FirstProject-0031.exp" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/Build/Win64/UE4Editor/Development/FirstProject/UE4Editor-FirstProject-0031.suppressed.lib" />
+    <option name="AFTER_PATH" value="Intermediate/Build/Win64/UE4Editor/Development/FirstProject/UE4Editor-FirstProject-0031.suppressed.lib" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/UE4Editor-FirstProject-0031.suppressed.lib" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/Build/SourceFileCache.bin" />
+    <option name="AFTER_PATH" value="Intermediate/Build/SourceFileCache.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/SourceFileCache.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/Build/Win64/FirstProjectEditor/Development/DependencyCache.bin" />
+    <option name="AFTER_PATH" value="Intermediate/Build/Win64/FirstProjectEditor/Development/DependencyCache.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/DependencyCache.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/Build/Win64/FirstProjectEditor/Development/HotReload.state" />
+    <option name="AFTER_PATH" value="Intermediate/Build/Win64/FirstProjectEditor/Development/HotReload.state" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/HotReload.state" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/Build/Win64/UE4Editor/Development/FirstProject/UE4Editor-FirstProject-0031.suppressed.exp" />
+    <option name="AFTER_PATH" value="Intermediate/Build/Win64/UE4Editor/Development/FirstProject/UE4Editor-FirstProject-0031.suppressed.exp" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/UE4Editor-FirstProject-0031.suppressed.exp" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Content/Maps/SunTemple_BuiltData.uasset" />
+    <option name="AFTER_PATH" value="Content/Maps/SunTemple_BuiltData.uasset" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/SunTemple_BuiltData.uasset" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Content/Maps/SunTemple.umap" />
+    <option name="AFTER_PATH" value="Content/Maps/SunTemple.umap" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/SunTemple.umap" />
+  </binary>
+</changelist>

@@ -1,0 +1,9 @@
+<changelist name="Uncommitted_changes_before_rebase_[Default_Changelist]3" date="1616723361678" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]3/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Intermediate/CachedAssetRegistry.bin" />
+    <option name="AFTER_PATH" value="Intermediate/CachedAssetRegistry.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]3/CachedAssetRegistry.bin" />
+  </binary>
+</changelist>
