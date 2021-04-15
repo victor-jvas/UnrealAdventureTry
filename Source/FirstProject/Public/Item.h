@@ -6,6 +6,8 @@
 
 #include "Components/SphereComponent.h"
 #include "GameFramework/Actor.h"
+#include "Sound/SoundCue.h"
+
 #include "Item.generated.h"
 
 UCLASS()
@@ -19,6 +21,24 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Item | Collision")
 	USphereComponent* CollisionVolume;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Item | Mesh")
+	UStaticMeshComponent* MeshComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item | Particles")
+	UParticleSystemComponent* IdleParticlesComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item | Particles")
+	UParticleSystem* OverlapParticlesComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item | Sounds")
+	USoundCue* OverlapSound;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item | Properties")
+	bool bRotating;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item | Properties")
+	float RotationRate;
 
 protected:
 	// Called when the game starts or when spawned

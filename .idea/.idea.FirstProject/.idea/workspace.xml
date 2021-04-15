@@ -5,7 +5,38 @@
     <projectFile>Intermediate/ProjectFiles/UE4.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e9dbb0b-07b0-4fc2-aa95-e0ed5dd75e52" name="Default Changelist" comment="" />
+    <list default="true" id="9e9dbb0b-07b0-4fc2-aa95-e0ed5dd75e52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Character/Animation/Dying_Backwards.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Character/Animation/Two_Cycle_Sprint.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/GameplayMechanics/BP_MainPlayerController.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/HUD/CoinTransBG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/HUD/WBP_Coins.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/HUD/WBP_HealthBar.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/HUD/WBP_StaminaBar.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/HUD/WPB_HUDOverlay.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Private/MainPlayerController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Public/MainPlayerController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CritterGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CritterGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animation/ABP_Main.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/Animation/ABP_Main.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/BP_Main.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/BP_Main.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayMechanics/BP_Explosive.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayMechanics/BP_Explosive.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayMechanics/BP_Pickup.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayMechanics/BP_Pickup.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayMechanics/BP_SpawnVolume.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayMechanics/BP_SpawnVolume.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/InfinityBladeEffects/Effects/FX_Meshes/Skills/rock/SM_TapLob_Projectile_Bomb.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/InfinityBladeEffects/Effects/FX_Meshes/Skills/rock/SM_TapLob_Projectile_Bomb.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/SunTemple.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/SunTemple.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Private/Explosive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Private/Explosive.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Private/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Private/Item.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Private/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Private/Main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Private/MainAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Private/MainAnimInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Private/Pickup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Private/Pickup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Public/Explosive.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Public/Explosive.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Public/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Public/Item.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Public/Main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Public/Main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Public/MainAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Public/MainAnimInstance.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,22 +50,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Templates/PointerIsConvertibleFromTo.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/Pawn.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Math/Vector.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Engine/EngineTypes.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Templates/PointerIsConvertibleFromTo.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/Pawn.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Math/Vector.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -47,10 +68,6 @@
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/ColliderMovementComponent.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Collider.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/Collider.cpp" />
-      <option value="$PROJECT_DIR$/Source/FirstProject/Public/Main.h" />
-      <option value="$PROJECT_DIR$/Source/FirstProject/Private/Main.cpp" />
-      <option value="$PROJECT_DIR$/Source/FirstProject/Private/MainAnimInstance.cpp" />
-      <option value="$PROJECT_DIR$/Source/FirstProject/Public/MainAnimInstance.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/FloorSwitch.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/FloorSwitch.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Critter.h" />
@@ -61,21 +78,31 @@
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/SpawnVolume.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/FloatingPlataform.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/FloatingPlataform.cpp" />
-      <option value="$PROJECT_DIR$/Source/FirstProject/Private/Item.cpp" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Public/Pickup.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Item.h" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Private/Item.cpp" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Public/MainPlayerController.h" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Private/MainPlayerController.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Explosive.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/Explosive.cpp" />
-      <option value="$PROJECT_DIR$/Source/FirstProject/Public/Pickup.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/Pickup.cpp" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Public/MainAnimInstance.h" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Private/MainAnimInstance.cpp" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Public/Main.h" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Private/Main.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1q2O27XmqgHVws7TQxkR508fh6z" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -324,6 +351,7 @@
       <workItem from="1618276292043" duration="277000" />
       <workItem from="1618276714416" duration="4969000" />
       <workItem from="1618346164842" duration="6807000" />
+      <workItem from="1618421198620" duration="10913000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1616723385808</created>
@@ -353,6 +381,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />

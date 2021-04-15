@@ -34,6 +34,66 @@ AMain::AMain()
 	GetCharacterMovement()->JumpZVelocity = 350.f;
 	GetCharacterMovement()->AirControl = 0.0f;
 
+
+	
+	MaxHealth = 100.f;
+	Health = 65.f;
+	MaxStamina = 200.f;
+	Stamina = 150.f;
+	Coins = 0;
+
+	RunningSpeed = 650.f;
+	SprintingSpeed = 850.f;
+
+	bShiftKeyPressed = false;
+
+	MovementStatus = EMovementStatus::EMS_Normal;
+	StaminaStatus = EStaminaStatus::ESS_Normal;
+
+	StaminaDrainRate = 25.f;
+	StaminaThreshold = 50.f;
+
+	
+}
+
+EMovementStatus AMain::GetMovementStatus() const
+{
+	return MovementStatus;
+}
+
+void AMain::SetMovementStatus(EMovementStatus MovStatus)
+{
+	this->MovementStatus = MovStatus;
+
+	if (MovementStatus == EMovementStatus::EMS_Sprinting)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = SprintingSpeed;
+	}
+	else
+	{
+		GetCharacterMovement()->MaxWalkSpeed = RunningSpeed;
+	}
+}
+
+void AMain::ShiftKeyDown()
+{
+	bShiftKeyPressed = true;
+}
+
+void AMain::ShiftKeyUp()
+{
+	bShiftKeyPressed = false;
+}
+
+
+EStaminaStatus AMain::GetStaminaStatus() const
+{
+	return StaminaStatus;
+}
+
+void AMain::SetStaminaStatus(EStaminaStatus StamStatus)
+{
+	this->StaminaStatus = StamStatus;
 }
 
 // Called when the game starts or when spawned
@@ -67,6 +127,9 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+
+	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AMain::ShiftKeyDown);
+	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AMain::ShiftKeyUp);
 
 }
 
@@ -102,5 +165,14 @@ void AMain::TurnAtRate(float Rate)
 void AMain::LookUpRate(float Rate)
 {
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+}
+
+void AMain::Die()
+{
+}
+
+void AMain::IncrementCoins()
+{
+	Coins++;
 }
 

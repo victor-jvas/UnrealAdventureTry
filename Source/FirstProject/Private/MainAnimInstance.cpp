@@ -10,6 +10,10 @@ void UMainAnimInstance::NativeInitializeAnimation()
 	if (Pawn == nullptr)
 	{
 		Pawn = TryGetPawnOwner();
+		if (Pawn)
+		{
+			MainCharacter = Cast<AMain>(Pawn);
+		}
 	}
 
 	
@@ -29,5 +33,10 @@ void UMainAnimInstance::UpdateAnimationProperties()
 		MovementSpeed = LateralSpeed.Size();
 
 		bIsInAir = Pawn->GetMovementComponent()->IsFalling();
+
+		if (MainCharacter == nullptr)
+		{
+			MainCharacter = Cast<AMain>(Pawn);
+		}
 	}
 }
