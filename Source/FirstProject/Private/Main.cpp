@@ -108,6 +108,97 @@ void AMain::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	float DeltaStamina = StaminaDrainRate * DeltaTime;
+
+	switch (StaminaStatus)
+	{
+		case EStaminaStatus::ESS_Normal:
+			if ( !GetMovementComponent()->IsFalling() &&  (GetMovementComponent()->Velocity.Size() != 0) )
+			{
+				if (bShiftKeyPressed)
+				{
+					if ( (Stamina - DeltaStamina) <= StaminaThreshold )
+					{
+						SetStaminaStatus(EStaminaStatus::ESS_BelowMinimum);
+						Stamina -= DeltaStamina;
+					}
+					else
+					{
+						Stamina -= DeltaStamina;
+					}
+					SetMovementStatus(EMovementStatus::EMS_Sprinting);
+				}
+			}
+			
+			else // Shift key up
+			{
+				if (Stamina + DeltaStamina >= MaxStamina)
+				{
+					Stamina = MaxStamina;
+				}
+				else
+				{
+					Stamina += DeltaStamina;
+				}
+				SetMovementStatus(EMovementStatus::EMS_Normal);
+			}
+			break;
+		case EStaminaStatus::ESS_BelowMinimum:
+			if (bShiftKeyPressed)
+			{
+				if (Stamina - DeltaStamina <= 0.f)
+				{
+					SetStaminaStatus(EStaminaStatus::ESS_Exhausted);
+					Stamina = 0;
+					SetMovementStatus(EMovementStatus::EMS_Normal);
+				}
+				else
+				{
+					Stamina -= DeltaStamina;
+					SetMovementStatus(EMovementStatus::EMS_Sprinting);
+				}
+			}
+			else // Shift key up
+			{
+				if (Stamina + DeltaStamina >= StaminaThreshold)
+				{
+					SetStaminaStatus(EStaminaStatus::ESS_Normal);
+					Stamina += DeltaStamina;
+				}
+				else
+				{
+					Stamina += DeltaStamina;
+				}
+				SetMovementStatus(EMovementStatus::EMS_Normal);
+			}
+			break;
+		case EStaminaStatus::ESS_Exhausted:
+			if (bShiftKeyPressed)
+			{
+				Stamina = 0.f;
+			}
+			else // Shift key up
+			{
+				SetStaminaStatus(EStaminaStatus::ESS_ExhaustedRecovering);
+				Stamina += DeltaStamina;
+			}
+			SetMovementStatus(EMovementStatus::EMS_Normal);
+			break;
+		case EStaminaStatus::ESS_ExhaustedRecovering:
+			if (Stamina + DeltaStamina >= StaminaThreshold)
+			{
+				SetStaminaStatus(EStaminaStatus::ESS_Normal);
+				Stamina += DeltaStamina;
+			}
+			else
+			{
+				Stamina += DeltaStamina;
+			}
+		SetMovementStatus(EMovementStatus::EMS_Normal);
+			break;
+		default: ;
+	}
+
 }
 
 // Called to bind functionality to input
