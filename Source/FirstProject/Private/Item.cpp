@@ -66,7 +66,6 @@ void AItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 		UGameplayStatics::PlaySound2D(this, OverlapSound);
 	}
 
-	Destroy();
 }
 
 void AItem::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
@@ -74,4 +73,6 @@ void AItem::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* Other
 {
 	UE_LOG(LogTemp, Warning, TEXT("OnOverlapEnd()"))
 }
+
+
 

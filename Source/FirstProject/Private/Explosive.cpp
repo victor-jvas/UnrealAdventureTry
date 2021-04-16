@@ -16,7 +16,6 @@ void AExplosive::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor
 	Super::OnOverlapBegin(OverlappedComponent, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
 	UE_LOG(LogTemp, Warning, TEXT("Explosive::OnOverlapBegin()"))
 
-		
 	if (OtherActor)
 	{
 		const FDamageEvent Event;
@@ -31,8 +30,8 @@ void AExplosive::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor
 			{
 				MainCharacter->Die();
 			}
-
 		}
+		Destroy();
 	}
 }
 

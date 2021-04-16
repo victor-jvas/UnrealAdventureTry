@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "Weapon.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/SpringArmComponent.h"
 
@@ -100,6 +102,22 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement")
 	bool bShiftKeyPressed;
 
+	/** Equipment*/
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Equipament")
+	AWeapon* EquippedWeapon;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Equipament")
+	AItem* ActiveOverlappingItem;
+
+	bool bFKeyPressed;
+	bool bLMBPressed;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Anims")
+	bool bAttacking;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Anims")
+	UAnimMontage* CombatMontage;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -135,4 +153,15 @@ public:
 	/** Release to stop sprinting */
 	void ShiftKeyUp();
 
+	FORCEINLINE void SetEquippedWeapon(AWeapon* Weapon) {EquippedWeapon = Weapon;}
+	FORCEINLINE AWeapon* GetEquippedWeapon() const { return EquippedWeapon; }
+	FORCEINLINE void SetActiveOverlappingItem(AItem* Item) {ActiveOverlappingItem = Item;}
+
+	void FKeyDown();
+	void FKeyUp();
+
+	void AttackKeyDown();
+	void AttackKeyUp();
+
+	void Attack();
 };

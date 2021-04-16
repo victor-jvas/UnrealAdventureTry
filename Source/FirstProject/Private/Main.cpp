@@ -46,6 +46,7 @@ AMain::AMain()
 	SprintingSpeed = 850.f;
 
 	bShiftKeyPressed = false;
+	bFKeyPressed = false;
 
 	MovementStatus = EMovementStatus::EMS_Normal;
 	StaminaStatus = EStaminaStatus::ESS_Normal;
@@ -83,6 +84,50 @@ void AMain::ShiftKeyDown()
 void AMain::ShiftKeyUp()
 {
 	bShiftKeyPressed = false;
+}
+
+void AMain::FKeyDown()
+{
+	bFKeyPressed = true;
+
+	if (ActiveOverlappingItem)
+	{
+		AWeapon* Weapon = Cast<AWeapon>(ActiveOverlappingItem);
+		if (Weapon)
+		{
+			Weapon->Equip(this);
+			SetActiveOverlappingItem(nullptr);
+		}
+	}
+}
+
+void AMain::FKeyUp()
+{
+	bFKeyPressed = false;
+}
+
+void AMain::AttackKeyDown()
+{
+	if (EquippedWeapon)
+	{
+		Attack();
+	}
+}
+
+void AMain::AttackKeyUp()
+{
+}
+
+void AMain::Attack()
+{
+	bAttacking = true;
+
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance)
+	{
+		AnimInstance->Montage_Play(CombatMontage, 1.5f);
+		AnimInstance->Montage_JumpToSection(FName("Attack_1"), CombatMontage);
+	}
 }
 
 
@@ -221,6 +266,13 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AMain::ShiftKeyDown);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AMain::ShiftKeyUp);
+
+	PlayerInputComponent->BindAction("Pickup", IE_Pressed, this, &AMain::FKeyDown);
+	PlayerInputComponent->BindAction("Pickup", IE_Released, this, &AMain::FKeyUp);
+	
+	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &AMain::AttackKeyDown);
+	PlayerInputComponent->BindAction("Attack", IE_Released, this, &AMain::AttackKeyUp);
+	
 
 }
 

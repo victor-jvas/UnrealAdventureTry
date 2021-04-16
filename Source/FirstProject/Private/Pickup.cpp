@@ -20,6 +20,7 @@ void APickup::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* O
 	{
 		AMain* MainCharacter = Cast<AMain>(OtherActor);
 		MainCharacter->IncrementCoins();
+		Destroy();
 	}
 }
 
