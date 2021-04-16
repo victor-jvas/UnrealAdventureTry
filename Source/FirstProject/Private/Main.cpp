@@ -108,6 +108,7 @@ void AMain::FKeyUp()
 
 void AMain::AttackKeyDown()
 {
+	bLMBPressed = true;
 	if (EquippedWeapon)
 	{
 		Attack();
@@ -116,17 +117,42 @@ void AMain::AttackKeyDown()
 
 void AMain::AttackKeyUp()
 {
+	bLMBPressed = false;
 }
 
 void AMain::Attack()
 {
-	bAttacking = true;
-
-	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
-	if (AnimInstance)
+	if (!bAttacking)
 	{
-		AnimInstance->Montage_Play(CombatMontage, 1.5f);
-		AnimInstance->Montage_JumpToSection(FName("Attack_1"), CombatMontage);
+		bAttacking = true;
+
+		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+		if (AnimInstance)
+		{
+			const int32 Section = FMath::RandRange(0, 1);
+			switch (Section)
+			{
+				case 0:
+					AnimInstance->Montage_Play(CombatMontage, 2.5f);
+					AnimInstance->Montage_JumpToSection(FName("Attack_1"), CombatMontage);
+					break;
+				case 1:
+					AnimInstance->Montage_Play(CombatMontage, 2.5f);
+					AnimInstance->Montage_JumpToSection(FName("Attack_2"), CombatMontage);
+					break;
+				default:
+					;
+			}
+		}
+	}
+}
+
+void AMain::AttackEnd()
+{
+	bAttacking = false;
+	if (bLMBPressed)
+	{
+		Attack();
 	}
 }
 
@@ -278,7 +304,7 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void AMain::MoveForward(float Value)
 {
-	if (Controller != nullptr && Value != 0.0f)
+	if ( (Controller != nullptr) && (Value != 0.0f) && (!bAttacking) )
 	{
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
@@ -290,7 +316,7 @@ void AMain::MoveForward(float Value)
 
 void AMain::MoveRight(float Value)
 {
-	if (Controller != nullptr && Value != 0.0f)
+	if ( (Controller != nullptr) && (Value != 0.0f) && (!bAttacking) )
 	{
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0.f, Rotation.Yaw, 0.f);

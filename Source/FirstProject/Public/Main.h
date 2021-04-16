@@ -102,13 +102,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement")
 	bool bShiftKeyPressed;
 
-	/** Equipment*/
+	#pragma region Equipment
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Equipament")
 	AWeapon* EquippedWeapon;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Equipament")
 	AItem* ActiveOverlappingItem;
-
+	#pragma endregion
+	
 	bool bFKeyPressed;
 	bool bLMBPressed;
 
@@ -164,4 +165,7 @@ public:
 	void AttackKeyUp();
 
 	void Attack();
+
+	UFUNCTION(BlueprintCallable)
+	void AttackEnd();
 };
