@@ -6,14 +6,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9dbb0b-07b0-4fc2-aa95-e0ed5dd75e52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Private/Enemy.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Public/Enemy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/BP_Collider.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/BP_CritterGameMode.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/FirstPersonCharacter.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/GameplayMechanics/BP_Explosive.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/GameplayMechanics/BP_FloatingPlataform.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/GameplayMechanics/BP_FloorSwitch.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/GameplayMechanics/BP_MainPlayerController.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/GameplayMechanics/BP_Pickup.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/GameplayMechanics/BP_SpawnVolume.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/MyController.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Core/MyGame.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Enemies/Spider/ABP_Spider.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Enemies/Spider/AM_Spider_Combat.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Enemies/Spider/BP_Spider.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Enemies/Spider/BS_Spider_IdleWalk.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/MaterialFunctions/MF_SmoothStep.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Materials/MAT_BloodClip_Master.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Materials/MIC_BloodClip_A.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Materials/MIC_BloodClip_Splat_2x2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Particles/PS_Blood_Spurt_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Textures/T_Blood_Clip_A.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Textures/T_Blood_Clip_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Textures/T_Blood_Reflection.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Textures/T_Blood_SubUV_2x2_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Textures/T_Blood_SubUV_2x2_01_N.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/FXVillesBloodVFXPack/Textures/T_Noise_N_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Private/EnemyAnimInstance.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Public/EnemyAnimInstance.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Collider.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_CritterGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_CritterGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/FirstPersonCharacter.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MyController.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MyGame.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Character/Animation/ABP_Main.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/Animation/ABP_Main.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Character/Animation/AM_Attack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/Animation/AM_Attack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/BP_Main.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/BP_Main.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/BP_Weapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/BP_Weapon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Character/Mesh/castle_guard_02_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/Mesh/castle_guard_02_Skeleton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayMechanics/BP_Explosive.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayMechanics/BP_Explosive.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayMechanics/BP_FloatingPlataform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayMechanics/BP_FloatingPlataform.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayMechanics/BP_FloorSwitch.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayMechanics/BP_FloorSwitch.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayMechanics/BP_MainPlayerController.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayMechanics/BP_Pickup.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayMechanics/BP_Pickup.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayMechanics/BP_SpawnVolume.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayMechanics/BP_SpawnVolume.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/InfinityBladeAdversaries/Enemy/Enemy_Great_Spider/Enemy_SpiderGreater_Animation/ExoGame_Greater_Spider_Attack_Melee_C.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/InfinityBladeAdversaries/Enemy/Enemy_Great_Spider/Enemy_SpiderGreater_Animation/ExoGame_Greater_Spider_Attack_Melee_C.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/InfinityBladeAdversaries/Enemy/Enemy_Great_Spider/SK_Greater_Spider.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/InfinityBladeAdversaries/Enemy/Enemy_Great_Spider/SK_Greater_Spider.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/InfinityBladeAdversaries/Enemy/Enemy_Great_Spider/SK_Greater_Spider_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/InfinityBladeAdversaries/Enemy/Enemy_Great_Spider/SK_Greater_Spider_Skeleton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_Glimmer/SK_Blade_Glimmer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_Glimmer/SK_Blade_Glimmer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_Glimmer/SK_Blade_Glimmer_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/InfinityBladeWeapons/Weapons/Blade/Swords/Blade_Glimmer/SK_Blade_Glimmer_Skeleton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/SunTemple.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/SunTemple.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Private/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Private/Enemy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/Private/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Private/Main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Private/MainAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Private/MainAnimInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Private/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Private/Weapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Public/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Public/Enemy.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/Public/Main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Public/Main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Public/MainAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Public/MainAnimInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Public/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Public/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,20 +116,23 @@
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/FloatingPlataform.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/FloatingPlataform.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Pickup.h" />
-      <option value="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/MainPlayerController.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/MainPlayerController.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Explosive.h" />
-      <option value="$PROJECT_DIR$/Source/FirstProject/Public/MainAnimInstance.h" />
-      <option value="$PROJECT_DIR$/Source/FirstProject/Private/MainAnimInstance.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Item.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/Item.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/Explosive.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/Pickup.cpp" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Public/MainAnimInstance.h" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Private/MainAnimInstance.cpp" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Public/EnemyAnimInstance.h" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Private/EnemyAnimInstance.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Weapon.h" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/Weapon.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Private/Main.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Main.h" />
+      <option value="$PROJECT_DIR$/Source/FirstProject/Private/Enemy.cpp" />
       <option value="$PROJECT_DIR$/Source/FirstProject/Public/Enemy.h" />
     </changedPaths>
   </component>
@@ -343,6 +398,7 @@
       <workItem from="1618524651808" duration="7714000" />
       <workItem from="1618537608169" duration="676000" />
       <workItem from="1618595333379" duration="2900000" />
+      <workItem from="1618613238423" duration="16493000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1616723385808</created>

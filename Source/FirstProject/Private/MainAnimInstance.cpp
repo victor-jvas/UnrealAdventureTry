@@ -15,8 +15,6 @@ void UMainAnimInstance::NativeInitializeAnimation()
 			MainCharacter = Cast<AMain>(Pawn);
 		}
 	}
-
-	
 }
 
 void UMainAnimInstance::UpdateAnimationProperties()

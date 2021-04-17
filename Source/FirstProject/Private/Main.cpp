@@ -5,6 +5,7 @@
 
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AMain::AMain()
@@ -144,6 +145,10 @@ void AMain::Attack()
 					;
 			}
 		}
+		if (EquippedWeapon)
+		{
+			//UGameplayStatics::PlaySound2D(this, EquippedWeapon->SwingSound);
+		}
 	}
 }
 
@@ -156,6 +161,10 @@ void AMain::AttackEnd()
 	}
 }
 
+void AMain::PlaySwingSound()
+{
+		UGameplayStatics::PlaySound2D(this, EquippedWeapon->SwingSound);
+}
 
 EStaminaStatus AMain::GetStaminaStatus() const
 {
